@@ -2,7 +2,8 @@
 const { Transaction } = require('./Transaction.js');
 
 class Budget {
-    constructor() {
+    constructor(name) {
+        this.name = name;
         this.transactions = [];
     }
 
@@ -60,17 +61,17 @@ class Budget {
     };
 };
 
-const budget1 = new Budget();
-budget1.createTransaction(54, 'cool description', 'expense');
-budget1.createTransaction(9.56, 'cool description of cool stuff', 'expense');
-budget1.createTransaction(137.21, 'cool description2', 'income');
-budget1.createTransaction(11.45, 'cool description3', 'income');
-budget1.calculateTotalExpenses();
-budget1.calculateTotalIncome();
-budget1.calculateNetBalance();
-budget1.getAllTransactions;
-budget1.deleteTransaction(0);
-budget1.getAllTransactions;
+// const budget1 = new Budget();
+// budget1.createTransaction(54, 'cool description', 'expense');
+// budget1.createTransaction(9.56, 'cool description of cool stuff', 'expense');
+// budget1.createTransaction(137.21, 'cool description2', 'income');
+// budget1.createTransaction(11.45, 'cool description3', 'income');
+// budget1.calculateTotalExpenses();
+// budget1.calculateTotalIncome();
+// budget1.calculateNetBalance();
+// budget1.getAllTransactions;
+// budget1.deleteTransaction(0);
+// budget1.getAllTransactions;
 
 // export { Budget };
 module.exports = { Budget };
